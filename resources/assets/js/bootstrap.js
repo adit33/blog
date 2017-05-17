@@ -15,11 +15,22 @@ window._ = require('lodash');
 
 window.$ = window.jQuery = require('jquery');
 
-import UIkit from 'uikit';
-import Icons from 'uikit/dist/js/uikit-icons';
+// import UIkit from 'uikit';
+// import Icons from 'uikit/dist/js/uikit-icons';
 
-// loads the Icon plugin
-UIkit.use(Icons);
+// // loads the Icon plugin
+// UIkit.use(Icons);
+
+// import '../semantic-ui/dist/components/dimmer';
+// import '../semantic-ui/dist/components/transition';
+// import '../semantic-ui/dist/components/dropdown';
+// import '../semantic-ui/dist/components/modal';
+// import '../semantic-ui/dist/components/rating';
+// import '../semantic-ui/dist/components/tab';
+// import '../semantic-ui/dist/components/popup';
+// import '../semantic-ui/dist/components/sticky';
+// import '../semantic-ui/dist/components/checkbox';
+
 
 
 /**
