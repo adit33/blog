@@ -17,7 +17,6 @@
     },
     "clean"        : "dist/"
   },
-
   "permission" : false,
   "autoInstall": false,
   "rtl": false

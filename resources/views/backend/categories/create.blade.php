@@ -1,12 +1,22 @@
 @extends('backend.layout.master')
 @section('content')
+<div id="app">
+  @{{ nama }}  
 @include('backend.categories._form')
+</div>
 @endsection
 
 @push('scripts')
 <script type="text/javascript">
 
- $('.ui.form')
+new Vue({
+  el:"#app",
+  data:{
+    nama:"adit"
+  }
+})
+
+$('.ui.form')
   .form({
     fields: {
       name     : 'empty',
@@ -16,6 +26,7 @@
       skills   : ['minCount[2]', 'empty'],
       terms    : 'checked'
     }
-  })
+  });
+
 </script>
 @endpush

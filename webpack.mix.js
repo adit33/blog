@@ -18,6 +18,7 @@ mix
    //.less('node_modules/semantic-ui/src/theme.less','public/css')
    //.options({ processCssUrls: false })
    .scripts([
+   	'public/js/app.js',
    	'node_modules/dropzone/dist/dropzone.js',
-   	'resources/assets/semantic-ui/dist/components/**/*.js',
-   	'resources/assets/semantic-ui/dist/semantic.js'], 'public/js/all.js');
+   	'resources/assets/semantic-ui/dist/semantic.js',
+   	'resources/assets/semantic-ui/dist/components/**/*.js'], 'public/js/all.js');
