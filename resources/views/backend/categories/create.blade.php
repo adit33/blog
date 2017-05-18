@@ -1,20 +1,14 @@
 @extends('backend.layout.master')
 @section('content')
-<div id="app">
-  @{{ nama }}  
-@include('backend.categories._form')
-</div>
+  
+  <categories-form></categories-form>
+
+<!-- @include('backend.categories._form') -->
+
 @endsection
 
 @push('scripts')
 <script type="text/javascript">
-
-new Vue({
-  el:"#app",
-  data:{
-    nama:"adit"
-  }
-})
 
 $('.ui.form')
   .form({

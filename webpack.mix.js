@@ -13,12 +13,11 @@ const { mix } = require('laravel-mix');
 
 mix
 .js('resources/assets/js/app.js', 'public/js')
-   .sass('resources/assets/sass/app.scss', 'public/css')
+   // .sass('resources/assets/sass/app.scss', 'public/css')
    //.less('node_modules/semantic-ui/src/semantic.less','public/css')
    //.less('node_modules/semantic-ui/src/theme.less','public/css')
    //.options({ processCssUrls: false })
    .scripts([
-   	'public/js/app.js',
    	'node_modules/dropzone/dist/dropzone.js',
    	'resources/assets/semantic-ui/dist/semantic.js',
-   	'resources/assets/semantic-ui/dist/components/**/*.js'], 'public/js/all.js');
+   	'resources/assets/semantic-ui/dist/components/**/*.js'], 'public/js/components.js');

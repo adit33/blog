@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Categories extends Model
 {
-    public function create(){
-    	return view('backend.categories.create');
-    }
+    protected $table='categories';
+    protected $primaryKey='id';
+    protected $fillable=['name'];
 }

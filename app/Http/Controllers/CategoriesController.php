@@ -13,7 +13,16 @@ class CategoriesController extends Controller
     }
 
     public function store(Request $request){
+    	$this->validate($request,[
+    		'name'=>'required'
+    	]);
+
     	$data=$request->all();
-    	Categories::cerate($data);
+    	Categories::create($data);
+
+    	if($data){
+    		return response()->json(['succcess'=>'true','message'=>'Data Berhasil di simpan']);
+    	}
+
     }
 }
